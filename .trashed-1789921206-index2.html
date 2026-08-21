@@ -35,7 +35,7 @@
 
         body {
             font-family: 'Nunito', sans-serif;
-            background: #A9C0E0;
+            background: linear-gradient(135deg, #ff75aa 0%, #fda1d4 50%, #ffe3f1 100%);
             display: flex;
             flex-direction: column;
             justify-content: center;
@@ -51,7 +51,7 @@
             width: 100%; height: 100%;
             top: 0; left: 0;
             pointer-events: none;
-            z-index: 100;
+            z-index: 150;
         }
         .heart {
             position: absolute;
@@ -82,7 +82,7 @@
 
         /* ── Main card ── */
         .container {
-            background: #FD1843;
+            background: rgba(255, 255, 255, 0.82);
             backdrop-filter: blur(20px) saturate(160%);
             -webkit-backdrop-filter: blur(20px) saturate(160%);
             padding: clamp(24px, 5vw, 40px) clamp(20px, 6vw, 40px);
@@ -362,7 +362,7 @@
             position: fixed;
             top: 0; left: 0;
             width: 100%; height: 100%;
-            background: #A9C0E0;
+            background: linear-gradient(160deg, #ff5fa8 0%, #ff88c8 40%, #ffb0dc 100%);
             z-index: 100;
             justify-content: center;
             align-items: center;
@@ -379,93 +379,23 @@
         }
 
         .success-content {
-            background: #FD1843;
+            background: rgba(255, 255, 255, 0.85);
             backdrop-filter: blur(20px) saturate(160%);
             -webkit-backdrop-filter: blur(20px) saturate(160%);
             padding: clamp(24px, 5vw, 40px) clamp(20px, 6vw, 40px);
             border-radius: 36px;
-            box-shadow:
-                0 0 34px rgba(253,24,67,0.48),
-                0 0 80px rgba(253,24,67,0.28),
-                0 24px 60px rgba(50,41,47,0.22),
-                inset 0 1px 0 rgba(255,255,255,0.72);
-            animation: slideIn 0.75s cubic-bezier(.34,1.56,.64,1) both, cardPowerGlow 3.2s ease-in-out 0.8s infinite;
+            box-shadow: 
+                0 30px 70px rgba(230, 50, 120, 0.15), 
+                0 10px 30px rgba(0, 0, 0, 0.04),
+                inset 0 1px 0 rgba(255, 255, 255, 0.6);
             max-width: 480px;
             width: 92%;
+            animation: slideIn 0.75s cubic-bezier(.34,1.56,.64,1) both;
             border: 1.5px solid rgba(255, 255, 255, 0.7);
         }
         @keyframes slideIn {
             from { transform: translateY(-50px) scale(0.82); opacity: 0; }
             to   { transform: translateY(0) scale(1); opacity: 1; }
-        }
-        @keyframes cardPowerGlow {
-            0%,100% { box-shadow: 0 0 30px rgba(253,24,67,0.42), 0 0 72px rgba(253,24,67,0.22), 0 24px 60px rgba(50,41,47,0.22), inset 0 1px 0 rgba(255,255,255,0.72); }
-            50% { box-shadow: 0 0 48px rgba(253,24,67,0.72), 0 0 105px rgba(253,24,67,0.38), 0 24px 60px rgba(50,41,47,0.22), inset 0 1px 0 rgba(255,255,255,0.82); }
-        }
-
-        /* Premium love animation — pure CSS, no emoji */
-        .love-animation {
-            position: relative;
-            width: 92px;
-            height: 92px;
-            margin: 0 auto 10px;
-            display: grid;
-            place-items: center;
-        }
-        .love-core {
-            width: 44px;
-            height: 44px;
-            position: relative;
-            transform: rotate(-45deg);
-            background: #FFF7F8;
-            border-radius: 8px;
-            animation: loveBeat 1.65s ease-in-out infinite;
-            box-shadow: 8px 8px 18px rgba(50,41,47,0.18);
-        }
-        .love-core::before, .love-core::after {
-            content: '';
-            position: absolute;
-            width: 44px;
-            height: 44px;
-            background: #FFF7F8;
-            border-radius: 50%;
-        }
-        .love-core::before { top: -22px; left: 0; }
-        .love-core::after { top: 0; left: 22px; }
-        .love-orbit {
-            position: absolute;
-            inset: 3px;
-            border: 2px solid rgba(255,255,255,0.72);
-            border-radius: 50%;
-            animation: loveOrbit 5s linear infinite;
-        }
-        .love-orbit::before, .love-orbit::after {
-            content: '';
-            position: absolute;
-            width: 7px; height: 7px;
-            border-radius: 50%;
-            background: #FFD166;
-            box-shadow: 0 0 14px rgba(255,209,102,0.9);
-        }
-        .love-orbit::before { top: 5px; left: 18px; }
-        .love-orbit::after { bottom: 7px; right: 15px; }
-        .love-glow {
-            position: absolute;
-            width: 72px; height: 72px;
-            border-radius: 50%;
-            border: 2px solid rgba(255,255,255,0.72);
-            box-shadow: 0 0 24px rgba(255,255,255,0.28), inset 0 0 14px rgba(255,255,255,0.12);
-            animation: loveGlow 2.2s ease-in-out infinite;
-        }
-        @keyframes loveBeat {
-            0%,100% { transform: rotate(-45deg) scale(0.92); }
-            35% { transform: rotate(-45deg) scale(1.08); }
-            55% { transform: rotate(-45deg) scale(0.98); }
-        }
-        @keyframes loveOrbit { to { transform: rotate(360deg); } }
-        @keyframes loveGlow {
-            0%,100% { transform: scale(0.92); opacity: 0.35; }
-            50% { transform: scale(1.08); opacity: 0.85; }
         }
 
         /* Big glowing heart */
@@ -506,9 +436,8 @@
             font-weight: 500;
             letter-spacing: 0;
             font-size: clamp(2.2em, 9vw, 3.2em);
-            color: #FFF9FA;
+            color: #f02580;
             margin: 8px 0 4px;
-            text-shadow: 0 0 8px rgba(255,255,255,0.95), 0 0 20px rgba(255,255,255,0.7), 0 3px 12px rgba(90,0,20,0.28);
             line-height: 1.2;
         }
 
@@ -518,17 +447,15 @@
             font-weight: 500;
             letter-spacing: 0;
             font-size: clamp(1.4em, 5.5vw, 2em);
-            color: #FFF9FA;
+            color: #f02580;
             margin: 4px 0 10px;
-            text-shadow: 0 0 7px rgba(255,255,255,0.9), 0 0 16px rgba(255,230,235,0.7), 0 3px 10px rgba(90,0,20,0.24);
             line-height: 1.4;
         }
 
         .forever-text {
             font-family: 'Nunito', sans-serif;
             font-size: clamp(0.82em, 3vw, 0.98em);
-            color: rgba(255,255,255,0.96);
-            text-shadow: 0 0 8px rgba(255,255,255,0.65), 0 2px 8px rgba(90,0,20,0.28);
+            color: #bbb;
             line-height: 1.7;
             margin: 0 0 14px;
         }
@@ -538,11 +465,7 @@
             background: transparent;
             border-radius: 0;
             padding: 18px 12px 10px;
-            margin-top: 2vh;
-            transform: translateY(-2vh);
-            position: relative;
-            z-index: 500;
-            isolation: isolate;
+            margin-top: 0;
         }
 
         /* Social icon-only circle buttons */
@@ -565,8 +488,6 @@
             border-radius: 50%;
             cursor: pointer;
             color: white;
-            position: relative;
-            z-index: 2;
             transition: transform 0.15s, box-shadow 0.15s;
             box-shadow: 0 4px 14px rgba(0,0,0,0.18);
             padding: 0;
@@ -585,10 +506,9 @@
             font-family: 'Dancing Script', cursive;
             font-size: clamp(0.88em, 3.5vw, 1.05em);
             font-weight: 400;
-            color: #FD1843;
+            color: #f02580;
             margin: 0;
             letter-spacing: 0.01em;
-            text-shadow: 0 0 8px rgba(255,255,255,0.8), 0 2px 10px rgba(253,24,67,0.35);
         }
 
         /* Toast */
@@ -673,13 +593,13 @@
             <!-- Confetti dots -->
             <div class="confetti-wrap" aria-hidden="true" id="confettiWrap"></div>
 
-            <div class="love-animation" aria-hidden="true"><span class="love-glow"></span><span class="love-orbit"></span><span class="love-core"></span></div>
+            <span class="big-heart">💖</span>
 
-            <h2 class="yay-text">That was a beautiful yes.</h2>
-            <p class="best-text">Some moments are meant<br>to be remembered.</p>
+            <h2 class="yay-text">Yay! I knew it! 😍</h2>
+            <p class="best-text">You are the best thing<br>that ever happened to me! 💕</p>
             <p class="forever-text">
-                Keep this little moment close,<br>
-                and share the smile with someone special.
+                You are my first love,<br>
+                My last love, and my forever love! 🌹
             </p>
         </div>
 
@@ -703,7 +623,7 @@
                         <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 01-2-2V4a2 2 0 012-2h9a2 2 0 012 2v1"/></svg>
                     </button>
                 </div>
-                <p class="share-title" style="color:#FD1843; text-shadow: 0 1px 6px rgba(50,41,47,0.22);">Share This Little Moment</p>
+                <p class="share-title" style="color:#fff; text-shadow: 0 1px 6px rgba(200,50,100,0.3);">Share Your Answer! 📱</p>
 
                 <!-- Back button — small, liquid-glass, pink glow -->
                 <a href="index.html" style="display:inline-flex; align-items:center; gap:5px; text-decoration:none;
@@ -713,7 +633,7 @@
                    backdrop-filter:blur(14px) saturate(180%);
                    -webkit-backdrop-filter:blur(14px) saturate(180%);
                    border:1px solid rgba(255,255,255,0.35);
-                   box-shadow:0 0 18px rgba(153,225,217,0.35), 0 4px 14px rgba(0,0,0,0.12), inset 0 1px 0 rgba(255,255,255,0.4);">← Back</a>
+                   box-shadow:0 0 18px rgba(255,105,180,0.55), 0 4px 14px rgba(0,0,0,0.12), inset 0 1px 0 rgba(255,255,255,0.4);">← Back</a>
         </div>
 
     </div>
