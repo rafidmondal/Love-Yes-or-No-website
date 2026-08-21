@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://rafidmondal.github.io/Love-Yes-or-No-website/sitemap.xml
