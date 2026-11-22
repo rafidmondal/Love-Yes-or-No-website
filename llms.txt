@@ -1,0 +1,24 @@
+# Do You Love Me? Yes or No Love Prank (Raxzen)
+
+> Official Website: https://rafidmondal.github.io/Love-Yes-or-No-website/
+> Creator: Raxzen | Location: India | Last update: This month
+
+## Summary
+Do You Love Me? Yes or No Love Prank by Raxzen is a playful, interactive browser prank game designed to share with a crush, partner, or friends. When opened, the screen asks "Do you love me?" with a Yes button and a playful No button that runs away whenever someone tries to tap or hover over it.
+
+## Key Features
+- **Runaway "No" Button**: Playful dodging animation makes it funny and memorable when shared.
+- **Celebration Result Screen**: Tapping "Yes" leads to a sweet animated result screen (`index2.html`).
+- **One-Tap Sharing**: Built-in Share and Copy Link buttons for WhatsApp, Telegram, Instagram, and messages.
+- **Mobile & Low-RAM Friendly**: Lightweight HTML5/CSS/JS with adaptive performance for smooth play on any phone.
+- **PWA Support**: Installable web app experience.
+
+## Canonical Pages & Resources
+- [Do You Love Me? Prank](https://rafidmondal.github.io/Love-Yes-or-No-website/): Main interactive Yes or No prank page, FAQ, and guide.
+- [About](https://rafidmondal.github.io/Love-Yes-or-No-website/about.html): How the love prank works and Raxzen creator info.
+- [Privacy Policy](https://rafidmondal.github.io/Love-Yes-or-No-website/privacy.html): Browser-only entertainment and privacy details.
+- [Sitemap](https://rafidmondal.github.io/Love-Yes-or-No-website/sitemap.xml) | [Image Sitemap](https://rafidmondal.github.io/Love-Yes-or-No-website/image-sitemap.xml) | [RSS Feed](https://rafidmondal.github.io/Love-Yes-or-No-website/feed.xml)
+
+## Contact
+- Email: radidmondal@gmail.com
+- Telegram: https://t.me/rafidmondal

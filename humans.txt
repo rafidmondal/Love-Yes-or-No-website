@@ -1,0 +1,11 @@
+/* TEAM */
+Creator: Raxzen
+Site: https://rafidmondal.github.io/Love-Yes-or-No-website/
+Contact: radidmondal@gmail.com
+Telegram: https://t.me/rafidmondal
+Location: India
+
+/* SITE */
+Last update: This month
+Language: English
+Standards: HTML5, CSS3, ES6+, JSON-LD, Open Graph, PWA

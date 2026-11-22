@@ -94,3 +94,4 @@ User-agent: CCBot
 Allow: /
 
 Sitemap: https://rafidmondal.github.io/Love-Yes-or-No-website/sitemap.xml
+Sitemap: https://rafidmondal.github.io/Love-Yes-or-No-website/image-sitemap.xml

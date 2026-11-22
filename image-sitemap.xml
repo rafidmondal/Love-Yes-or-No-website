@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+  <url>
+    <loc>https://rafidmondal.github.io/Love-Yes-or-No-website/</loc>
+    <image:image>
+      <image:loc>https://rafidmondal.github.io/Love-Yes-or-No-website/preview.png</image:loc>
+      <image:title>Do You Love Me? Yes or No Prank Preview</image:title>
+      <image:caption>Interactive Do You Love Me Yes or No love prank with runaway No button</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://rafidmondal.github.io/Love-Yes-or-No-website/logo.png</image:loc>
+      <image:title>Do You Love Me Love Prank Logo</image:title>
+      <image:caption>Official logo for Do You Love Me Yes or No game by Raxzen</image:caption>
+    </image:image>
+  </url>
+</urlset>

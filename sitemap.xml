@@ -3,22 +3,24 @@
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
     <loc>https://rafidmondal.github.io/Love-Yes-or-No-website/</loc>
-    <lastmod>2026-08-22</lastmod>
+    <lastmod>2026-11-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
     <image:image>
       <image:loc>https://rafidmondal.github.io/Love-Yes-or-No-website/preview.png</image:loc>
-      <image:title>Do You Love Me? Yes or No Prank Website</image:title>
+      <image:title>Do You Love Me? Yes or No Love Prank Game</image:title>
     </image:image>
   </url>
   <url>
-    <loc>https://rafidmondal.github.io/Love-Yes-or-No-website/index2.html</loc>
-    <lastmod>2026-08-22</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-    <image:image>
-      <image:loc>https://rafidmondal.github.io/Love-Yes-or-No-website/preview.png</image:loc>
-      <image:title>Do You Love Me? Yes or No Prank Website - Version 2</image:title>
-    </image:image>
+    <loc>https://rafidmondal.github.io/Love-Yes-or-No-website/about.html</loc>
+    <lastmod>2026-11-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://rafidmondal.github.io/Love-Yes-or-No-website/privacy.html</loc>
+    <lastmod>2026-11-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
   </url>
 </urlset>
