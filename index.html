@@ -1281,7 +1281,7 @@ let yesFired = false;
 let yesTouchFired = false;
 
 // Immediately blur any element that gets focused — no focus state ever
-document.addEventListener('focusin', e => { e.target.blur(); });
+document.addEventListener('focusin', e => { if (e.target && (e.target.id === 'rax-ai-host' || (e.target.closest && e.target.closest('#rax-ai-host')))) return; e.target.blur(); });
 
 yesBtn.addEventListener('click', function(e) {
     e.preventDefault();
